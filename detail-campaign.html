@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Campaign Pro</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<style>
+    .campaign-details {
+        padding: 3em;
+        background: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .campaign-banner img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 2em;
+    }
+
+    .campaign-info {
+        text-align: left;
+        width: 100%;
+    }
+
+    .campaign-name {
+        font-size: 2.5em;
+        color: #333;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .campaign-meta {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f9f9f9;
+        padding: 1.5em;
+        border-radius: 10px;
+        margin-bottom: 2em;
+    }
+
+    .campaign-meta p {
+        font-size: 1.1em;
+        color: #555;
+    }
+
+    .campaign-description {
+        text-align: justify;
+        font-size: 1em;
+        color: #666;
+        line-height: 1.8;
+    }
+
+    .campaign-description h3 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        color: #333;
+    }
+
+</style>
+<body class="is-preload">
+
+<!-- Header -->
+<header id="header">
+    <a class="logo" href="index.html">Campaign Pro</a>
+    <nav>
+        <span>Xin chào, Creator </span>
+        <a href="#menu">Menu</a>
+    </nav>
+</header>
+
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="#">Trang Chủ</a></li>
+        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+        <li><a href="#">Chiến dịch của bạn</a></li>
+        <li><a href="#">Đăng nhập</a></li>
+        <li><a href="#">Đăng ký</a></li>
+    </ul>
+</nav>
+
+
+<!-- Heading -->
+<div id="heading">
+    <h1>Thông tin chi tiết</h1>
+</div>
+
+<!-- Main -->
+<section id="main" class="wrapper">
+    <div class="inner">
+        <div class="content campaign-details">
+
+            <!-- Campaign Banner -->
+            <div class="campaign-banner">
+                <img src="/images/banner.jpg" alt="Banner Chiến dịch bảo vệ rừng">
+            </div>
+
+            <!-- Campaign Information -->
+            <div class="campaign-info">
+                <h2 class="campaign-name">Chiến dịch bảo vệ rừng</h2>
+                <div class="campaign-meta">
+                    <p class="campaign-code"><strong>Mã chiến dịch:</strong> #12345</p>
+                    <p class="campaign-dates">
+                        <strong>Ngày bắt đầu:</strong> 01/01/2024 <br>
+                        <strong>Ngày kết thúc:</strong> 31/12/2024
+                    </p>
+                    <p class="campaign-followers"><strong>Lượng người theo dõi yêu cầu:</strong> 10,000</p>
+                </div>
+
+                <div class="campaign-description">
+                    <h3>Mô tả Chiến dịch</h3>
+                    <p>
+                        Chiến dịch bảo vệ rừng nhằm chống lại nạn phá rừng và khai thác tài nguyên một cách trái phép. Chúng tôi kêu gọi các cá nhân và tổ chức tham gia cùng chúng tôi trong sứ mệnh này để bảo vệ tài nguyên thiên nhiên. Mỗi người đóng góp không chỉ giúp bảo tồn môi trường sống của các loài động thực vật quý hiếm, mà còn góp phần giữ gìn sự đa dạng sinh học và giảm thiểu các tác động tiêu cực của biến đổi khí hậu...
+                    </p>
+                    <p>
+                        ...Bạn có thể tham gia bằng cách đăng ký làm tình nguyện viên, ủng hộ tài chính, hoặc chia sẻ thông tin chiến dịch đến với nhiều người hơn. Hãy cùng chúng tôi bảo vệ những khu rừng xanh, ngôi nhà của hàng nghìn loài sinh vật và nguồn sống cho thế hệ tương lai.
+                    </p>
+                </div>
+                <button type="button" class="btn btn-custom float-end mt-4" data-bs-toggle="modal" data-bs-target="#joinModal">
+                    Tham gia
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="joinModalLabel">Lý do bạn muốn tham gia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="reason" class="form-label">Lý do tham gia</label>
+                        <textarea class="form-control" id="reason" rows="3" placeholder="Nhập lý do của bạn..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Xác nhận</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="footer">
+    <div class="inner">
+        <div class="content">
+            <section>
+                <h3>Liên Hệ</h3>
+                <p>Để biết thêm chi tiết về các chiến dịch hoặc cách bạn có thể tham gia, vui lòng liên hệ với chúng
+                    tôi.</p>
+            </section>
+            <section>
+                <h4>Chiến Dịch Nổi Bật</h4>
+                <ul class="alt">
+                    <li><a href="#">Chiến dịch bảo vệ rừng</a></li>
+                    <li><a href="#">Giúp đỡ trẻ em vùng sâu vùng xa</a></li>
+                    <li><a href="#">Phát triển hạ tầng nông thôn</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Kết Nối Với Chúng Tôi</h4>
+                <ul class="plain">
+                    <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                    <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                    <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

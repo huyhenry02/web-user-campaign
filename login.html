@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Campaign Pro</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<style>
+    #register .inner {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2em;
+        background: #f9f9f9;
+        border-radius: 10px;
+    }
+
+    #register h2 {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    #register .fields {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #register .field.half {
+        flex: 1 1 calc(50% - 1em);
+        margin-top: 5px;
+    }
+
+    #register .actions {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    #register .actions .primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 0.75em 1.5em;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+</style>
+<body class="is-preload">
+
+<!-- Header -->
+<header id="header">
+    <a class="logo" href="index.html">Campaign Pro</a>
+    <nav>
+        <span>Xin chào, Creator </span>
+        <a href="#menu">Menu</a>
+    </nav>
+</header>
+
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="#">Trang Chủ</a></li>
+        <li><a href="#">Giới Thiệu</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+        <li><a href="#">Chiến dịch của bạn</a></li>
+        <li><a href="#">Đăng nhập</a></li>
+        <li><a href="#">Đăng ký</a></li>
+    </ul>
+</nav>
+
+
+<!-- Heading -->
+<div id="heading">
+    <h1>Đăng nhập</h1>
+</div>
+
+<!-- Main -->
+<section id="main" class="wrapper">
+    <!-- Registration Form -->
+    <div class="inner">
+        <div class="content">
+            <h2>Đăng nhập hệ thống</h2>
+            <form action="#" method="POST">
+                <div class="fields">
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Nhập email của bạn" required/>
+                    </div>
+
+                    <div class="field half">
+                        <label for="password">Mật khẩu</label>
+                        <input type="password" name="password" id="password" placeholder="Mật khẩu" required/>
+                    </div>
+                </div>
+                <ul class="actions" style="margin-top: 10px">
+                    <li><input type="submit" value="Đăng nhập" class="primary"/></li>
+                    <li><input type="reset" value="Xóa"/></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<footer id="footer">
+    <div class="inner">
+        <div class="content">
+            <section>
+                <h3>Liên Hệ</h3>
+                <p>Để biết thêm chi tiết về các chiến dịch hoặc cách bạn có thể tham gia, vui lòng liên hệ với chúng
+                    tôi.</p>
+            </section>
+            <section>
+                <h4>Chiến Dịch Nổi Bật</h4>
+                <ul class="alt">
+                    <li><a href="#">Chiến dịch bảo vệ rừng</a></li>
+                    <li><a href="#">Giúp đỡ trẻ em vùng sâu vùng xa</a></li>
+                    <li><a href="#">Phát triển hạ tầng nông thôn</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Kết Nối Với Chúng Tôi</h4>
+                <ul class="plain">
+                    <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                    <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+                    <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
